@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="main">#1B9F7E</color>
+    <color name="mediInfo_box">#F8F8F8</color>
+    <color name="my_page_back">#e5e5e5</color>
+</resources>

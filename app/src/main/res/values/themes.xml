@@ -1,0 +1,15 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.MedicalApp" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/main</item>
+    </style>
+
+    <style name="Theme.MedicalApp" parent="Base.Theme.MedicalApp" />
+    <style name="Theme.MedicalApp.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Theme.MedicalApp.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Theme.MedicalApp.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>

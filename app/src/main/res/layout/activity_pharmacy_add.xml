@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".hospital.HospitalAddActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="#1B9F7E"
+        app:cardCornerRadius="8dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="약국등록"
+            android:textAlignment="center"
+            android:textSize="55sp" />
+    </androidx.cardview.widget.CardView>
+
+    <EditText
+        android:id="@+id/tvInputPharmacy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@android:drawable/editbox_background_normal"
+        android:ems="10"
+        android:hint="병원이름을 입력하세요" />
+
+
+    <EditText
+        android:id="@+id/tvInputAddr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@android:drawable/editbox_background_normal"
+        android:ems="10"
+        android:hint="주소를 입력하세요" />
+
+    <EditText
+        android:id="@+id/tvInputCitycode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@android:drawable/editbox_background_normal"
+        android:ems="10"
+        android:hint="도시를 입력하세요" />
+
+    <EditText
+        android:id="@+id/tvInputSiguncode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@android:drawable/editbox_background_normal"
+        android:ems="10"
+        android:hint="시 / 군을 입력하세요" />
+
+    <EditText
+        android:id="@+id/tvInputDong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@android:drawable/editbox_background_normal"
+        android:ems="10"
+        android:hint="동을 입력하세요" />
+
+    <EditText
+        android:id="@+id/tvInputX"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@android:drawable/editbox_background_normal"
+        android:ems="10"
+        android:hint="x좌표를 입력하세요" />
+
+    <EditText
+        android:id="@+id/tvInputY"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@android:drawable/editbox_background_normal"
+        android:ems="10"
+        android:hint="y좌표를 입력하세요" />
+
+    <EditText
+        android:id="@+id/tvInputTel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@android:drawable/editbox_background_normal"
+        android:ems="10"
+        android:hint="전화번호를 입력하세요" />
+
+    <Button
+        android:id="@+id/postBtn"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="13dp"
+        android:background="@android:drawable/editbox_background_normal"
+        android:backgroundTint="#d5d5d5"
+        android:hint="등록"
+        android:inputType="text"
+        android:padding="12dp"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

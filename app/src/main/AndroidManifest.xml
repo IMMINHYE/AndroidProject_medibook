@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.DIAL_PHONE" />
+
+    <application
+        android:name=".util.MyApplication"
+        android:allowBackup="false"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MedicalApp.NoActionBar"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".hospital.DepartSearchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".hospital.HospitalSearchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pharmacy.PhNameActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pharmacy.PhLocalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".hospital.NameSearchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".user.ChangePassActivity"
+            android:exported="false" />
+        <activity
+            android:name=".sign.forGetPassActivity"
+            android:exported="false" />
+        <activity
+            android:name=".community.CommunityModifyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pharmacy.PharmacyAddActivity"
+            android:exported="false" />
+        <activity
+            android:name=".hospital.HospitalAddActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pharmacy.PharmacyDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pharmacy.PharmacyListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.UserDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.UserListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".hospital.LocationSelectActivity"
+            android:exported="false" />
+        <activity
+            android:name=".hospital.DepartSelectActivity"
+            android:exported="false" />
+        <activity
+            android:name=".user.ModifyInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".user.UserMainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".hospital.HospitalDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".hospital.HospitalListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".sign.RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".sign.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".community.CommunityActivity"
+            android:exported="false" />
+        <activity
+            android:name=".community.CommunityDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".community.CommunityWriteActivity"
+            android:exported="false" /> <!-- <activity -->
+        <!-- android:name="org.lmh.firebaseapp.AuthActivity" -->
+        <!-- android:exported="false" /> -->
+        <activity
+            android:name=".medicalInfo.MedicalInfoWriteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".medicalInfo.MedicalInfoModifyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".medicalInfo.MedicalInfoActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.naver.maps.map.CLIENT_ID"
+            android:value="dahrfkwko0" />
+    </application>
+
+</manifest>

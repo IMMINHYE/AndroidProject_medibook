@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/departSearch"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".hospital.DepartSearchActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <Button
+            android:id="@+id/btnCloseX"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/ic_close_xbutton" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="16dp"
+            android:text=""
+            android:textSize="15sp"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="진료과를\n선택하세요"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="#000000" />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:columnCount="2"
+            android:rowCount="11">
+
+            <Button
+                android:id="@+id/btn00"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:text="모두"
+                android:backgroundTint="#FFFFFF"
+                android:background="@drawable/rounded_button"
+                android:textColor="#000000"
+                android:padding="10dp"
+                android:layout_margin="3dp"/>
+
+            <Button
+                android:id="@+id/btn01"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:text="외과"
+                android:backgroundTint="#FFFFFF"
+                android:background="@drawable/rounded_button"
+                android:textColor="#000000"
+                android:padding="10dp"
+                android:layout_margin="3dp"/>
+
+            <Button
+                android:id="@+id/btn10"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:text="성형외과"
+                android:backgroundTint="#FFFFFF"
+                android:background="@drawable/rounded_button"
+                android:textColor="#000000"
+                android:padding="10dp"
+                android:layout_margin="3dp"/>
+
+
+            <Button
+                android:id="@+id/btn11"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:text="내과"
+                android:backgroundTint="#FFFFFF"
+                android:background="@drawable/rounded_button"
+                android:textColor="#000000"
+                android:padding="10dp"
+                android:layout_margin="3dp"/>
+
+
+            <Button
+                android:id="@+id/btn20"
+                android:layout_row="2"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:text="산부인과"
+                android:backgroundTint="#FFFFFF"
+                android:background="@drawable/rounded_button"
+                android:textColor="#000000"
+                android:padding="10dp"
+                android:layout_margin="3dp"/>
+
+
+            <Button
+                android:id="@+id/btn21"
+                android:layout_row="2"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:text="이비인후과"
+                android:backgroundTint="#FFFFFF"
+                android:background="@drawable/rounded_button"
+                android:textColor="#000000"
+                android:padding="10dp"
+                android:layout_margin="3dp"/>
+
+
+            <Button
+                android:id="@+id/btn30"
+                android:layout_row="3"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:text="비뇨기과"
+                android:backgroundTint="#FFFFFF"
+                android:background="@drawable/rounded_button"
+                android:textColor="#000000"
+                android:padding="10dp"
+                android:layout_margin="3dp"/>
+
+            <Button
+                android:id="@+id/btn31"
+                android:layout_row="3"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:text="소아과"
+                android:backgroundTint="#FFFFFF"
+                android:background="@drawable/rounded_button"
+                android:textColor="#000000"
+                android:padding="10dp"
+                android:layout_margin="3dp"/>
+
+            <Button
+                android:id="@+id/btn40"
+                android:layout_row="4"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:text="정신과"
+                android:backgroundTint="#FFFFFF"
+                android:background="@drawable/rounded_button"
+                android:textColor="#000000"
+                android:padding="10dp"
+                android:layout_margin="3dp"/>
+
+            <Button
+                android:id="@+id/btn41"
+                android:layout_row="4"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:text="안과"
+                android:backgroundTint="#FFFFFF"
+                android:background="@drawable/rounded_button"
+                android:textColor="#000000"
+                android:padding="10dp"
+                android:layout_margin="3dp"/>
+
+            <Button
+                android:id="@+id/btn50"
+                android:layout_row="5"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:text="통증의학과"
+                android:backgroundTint="#FFFFFF"
+                android:background="@drawable/rounded_button"
+                android:textColor="#000000"
+                android:padding="10dp"
+                android:layout_margin="3dp"/>
+
+            <Button
+                android:id="@+id/btn51"
+                android:layout_row="5"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:text="정형외과"
+                android:backgroundTint="#FFFFFF"
+                android:background="@drawable/rounded_button"
+                android:textColor="#000000"
+                android:padding="10dp"
+                android:layout_margin="3dp"/>
+
+            <Button
+                android:id="@+id/btn60"
+                android:layout_row="6"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:text="치과"
+                android:backgroundTint="#FFFFFF"
+                android:background="@drawable/rounded_button"
+                android:textColor="#000000"
+                android:padding="10dp"
+                android:layout_margin="3dp"/>
+
+            <Button
+                android:id="@+id/btn61"
+                android:layout_row="6"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:text="가정의학과"
+                android:backgroundTint="#FFFFFF"
+                android:background="@drawable/rounded_button"
+                android:textColor="#000000"
+                android:padding="10dp"
+                android:layout_margin="3dp"/>
+
+            <Button
+                android:id="@+id/btn70"
+                android:layout_row="7"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:text="건강의학과"
+                android:backgroundTint="#FFFFFF"
+                android:background="@drawable/rounded_button"
+                android:textColor="#000000"
+                android:padding="10dp"
+                android:layout_margin="3dp"/>
+
+            <Button
+                android:id="@+id/btn71"
+                android:layout_row="7"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:text="재활의학과"
+                android:backgroundTint="#FFFFFF"
+                android:background="@drawable/rounded_button"
+                android:textColor="#000000"
+                android:padding="10dp"
+                android:layout_margin="3dp"/>
+
+            <Button
+                android:id="@+id/btn80"
+                android:layout_row="8"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:text="한의원"
+                android:backgroundTint="#FFFFFF"
+                android:background="@drawable/rounded_button"
+                android:textColor="#000000"
+                android:padding="10dp"
+                android:layout_margin="3dp"/>
+
+            <Button
+                android:id="@+id/btn81"
+                android:layout_row="8"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:text="한방병원"
+                android:backgroundTint="#FFFFFF"
+                android:background="@drawable/rounded_button"
+                android:textColor="#000000"
+                android:padding="10dp"
+                android:layout_margin="3dp"/>
+
+            <Button
+                android:id="@+id/btn90"
+                android:layout_row="9"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:text="요양병원"
+                android:backgroundTint="#FFFFFF"
+                android:background="@drawable/rounded_button"
+                android:textColor="#000000"
+                android:padding="10dp"
+                android:layout_margin="3dp"/>
+
+
+            <Button
+                android:id="@+id/btn91"
+                android:layout_row="9"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:text="종합병원"
+                android:backgroundTint="#FFFFFF"
+                android:background="@drawable/rounded_button"
+                android:textColor="#000000"
+                android:padding="10dp"
+                android:layout_margin="3dp"/>
+
+        </GridLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

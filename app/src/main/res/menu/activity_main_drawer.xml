@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="nav_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_login"
+            android:title="@string/menu_login" />
+        <item
+            android:id="@+id/nav_my_page"
+            android:title="@string/menu_my_page"
+            android:visible="false">
+        </item>
+        <item
+            android:id="@+id/nav_admin"
+            android:title="@string/menu_manage"
+            android:visible="false">
+        </item>
+        <item
+            android:title="게시판">
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/nav_hospital"
+                        android:title="@string/menu_hospital" />
+                    <item
+                        android:id="@+id/nav_pharmacy"
+                        android:title="@string/menu_pharmacy" />
+                    <item
+                        android:id="@+id/nav_community"
+                        android:title="@string/menu_community" />
+                    <item
+                        android:id="@+id/nav_medical_info"
+                        android:title="@string/menu_medical_info" />
+                </group>
+            </menu>
+        </item>
+    </group>
+</menu>
